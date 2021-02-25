@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     get "/guess_a_number" => "params#guess_a_number"
     get "/guess_a_number/:guess" => "params#guess_a_number"
     post "/guess_a_number" => "params#guess_a_number"
+    post "/login" => "params#login"
   end
 end
