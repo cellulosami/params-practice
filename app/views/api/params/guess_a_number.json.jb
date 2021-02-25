@@ -1,1 +1,1 @@
-"hello"
+{your_guess: @guess, result: @result}
