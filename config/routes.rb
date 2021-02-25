@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   namespace :api do
     get "/name" => "params#name"
   end
+
+  namespace :api do
+    get "/guess_a_number" => "params#guess_a_number"
+  end
 end

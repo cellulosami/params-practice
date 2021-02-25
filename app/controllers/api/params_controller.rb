@@ -7,4 +7,8 @@ class Api::ParamsController < ApplicationController
     end
     render "name.json.jb"
   end
+
+  def guess_a_number
+    render "guess_a_number.json.jb"
+  end
 end
