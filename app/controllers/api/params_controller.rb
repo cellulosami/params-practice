@@ -10,9 +10,10 @@ class Api::ParamsController < ApplicationController
 
   def guess_a_number
     @guess = params[:guess].to_i
-    if @guess > 36
+    correct_number = 36
+    if @guess > correct_number
       @result = "Too high!"
-    elsif @guess < 36
+    elsif @guess < correct_number
       @result = "Too low!"
     else
       @result = "Correct!!!"
