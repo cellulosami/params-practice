@@ -1,7 +1,7 @@
 class Api::ParamsController < ApplicationController
   def name
     if params["name"][0].upcase == "A"
-      @message = "Hey, your name starts with A!"
+      @message = "Hey, your name starts with A ya nug"
     else
       @message = nil
     end
@@ -9,7 +9,6 @@ class Api::ParamsController < ApplicationController
   end
 
   def guess_a_number
-    number = 36
     @guess = params[:guess].to_i
     if @guess > 36
       @result = "Too high!"
